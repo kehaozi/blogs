@@ -186,7 +186,7 @@ class Permission(models.Model):
 
 > django.crontrib.auth.models 里的User类，继承关系是
 
-![Diagram](https://app.yinxiang.com/shard/s63/res/1a6c6c40-3879-4a08-96c5-9ae4cad62cbb/411f12e5f80ede960736b7c90e3c78b9.png)
+![Diagram](https://img2018.cnblogs.com/blog/1212342/201810/1212342-20181003165141697-855565892.png)
 
 > 可以看到， AbstractUser分别从djaogo.contrib.auth.models的PermissionMixin类和django.crontrib.auth.base_user的AbstractBaseUser类中继承了 uer_permissions 属性和is_active属性，当然，AbstractUser也分别从PermissionMixin和AbstractBaseUser中继承了其他属性和方法，具体看UML图或源码
 > 而 user_permissionss属性，我们看看源码都干了什么
@@ -291,7 +291,7 @@ def _user_has_perm(user, perm, obj):
 
 **==django.auth.backends==**
 
-![Diagram](https://app.yinxiang.com/shard/s63/res/6194c23d-3331-49f8-9f59-b9eccb54dd29/c27a8f3d48c4996e453e6ae945e3867c.png)
+![Diagram](https://img2018.cnblogs.com/blog/1212342/201810/1212342-20181003165720363-2015762920.png)
 
 
 ``` python?linenums
